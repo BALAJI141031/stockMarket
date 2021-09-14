@@ -28,6 +28,9 @@ export default function App() {
 
   function calculatePrice() {
     if (sellimgPrice !== "" || costprice !== "" || quantity !== "") {
+      sellimgPrice=Number(sellimgPrice)
+      costprice=Number(costprice)
+      quantity=Number(quantity)
       if (sellimgPrice > costprice) {
         var profit = sellimgPrice - costprice;
 
